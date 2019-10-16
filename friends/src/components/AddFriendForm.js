@@ -26,7 +26,7 @@ class AddFriendForm extends React.Component {
       e.preventDefault();
       
       axiosWithAuth()
-        .post('/api/data', this.state.friend)
+        .post('/api/friends', this.state.friend)
         .then(res => {
           console.log(res);
         })

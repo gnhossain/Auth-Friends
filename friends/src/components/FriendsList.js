@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 import AddFriendForm from './AddFriendForm';
 import FriendsCard from './FriendsCard';
+import Logout from './Logout';
 
 export default function FriendList(){
 
@@ -21,6 +22,7 @@ export default function FriendList(){
 
     return(
         <div>
+            <Logout/>
             <AddFriendForm />
             <div className='friend-list'>
                 {friends.map( friend => 
